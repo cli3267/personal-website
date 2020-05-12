@@ -7,4 +7,5 @@ Frontend - React
 Backend - &will do either express or nextjs
 
 CSS - Bootstrap
+*Need to fix styling for full size page
 
