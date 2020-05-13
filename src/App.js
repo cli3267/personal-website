@@ -3,8 +3,8 @@ import Nav from './components/Nav';
 import Footer from './components/Footer';
 const App = () => {
   return (
-    <div className='App'>
-      <div className='bg-dark text-white' style={{ height: '100vh' }}>
+    <div>
+      <div className='text-white'>
         <Nav />
         <Footer />
       </div>
