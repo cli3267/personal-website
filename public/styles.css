@@ -1,8 +1,12 @@
 #link:not(.active):hover {
   text-decoration: underline;
 }
+html, body {
+  margin: 0;
+  height: 100%;
+}
 
-body {
+nav {
   background-color: #343A40;
   background-size: cover;
 }
