@@ -10,10 +10,9 @@ const Footer = () => {
       <Navbar
         className='justify-content-end'
         expand='lg'
-        bg='dark'
         variant='dark'
         fixed='bottom'
-        style={{ width: '7vh' }}
+        style={{ marginBottom: '25px' }}
       >
         <Nav justify className='flex-column'>
           <div

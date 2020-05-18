@@ -4,6 +4,6 @@ I have created this website to showcase what I have learned in the past year thr
 
 Frontend - React & React-Bootstrap
 
-Backend - &will do either express or nextjs
+Backend - NextJS
 
 *need to fix home to become react-bootstrap

@@ -26,7 +26,7 @@ const About = () => {
             <Col sm={4}>
               <Image
                 className='float-right'
-                src={public_folder + 'images/me.jpg'}
+                src={'/images/me.jpg'}
                 alt='Christina Li'
               />
             </Col>
