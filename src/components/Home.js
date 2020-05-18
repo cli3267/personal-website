@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div
       className='d-flex align-items-center text-white bg-dark'
-      style={{ height: '25vh' }}
+      style={{ height: '100vh' }}
     >
       <div className='container'>
         <div className='row justify-content-center'>
