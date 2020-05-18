@@ -1,49 +1,25 @@
-import React, { useState } from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-} from 'react-router-dom';
-import about from './About';
-import home from './Home';
-const Nav = () => {
+import React from 'react';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
+
+const Navigation = () => {
   return (
-    <Router>
-      <div>
-        <header>
-          <nav className='navbar navbar-expand-lg navbar-dark'>
-            <div className='container-fluid'>
-              <div className='navbar-header'>
-                <a className='navbar-brand'>Christina Li</a>
-              </div>
-              <div className='nav navbar-right'>
-                <NavLink
-                  id='link'
-                  className='navlink navbar-brand'
-                  exact
-                  to='/'
-                  activeStyle={{ color: '#9BD1FA' }}
-                >
-                  Home
-                </NavLink>
-                <NavLink
-                  id='link'
-                  className='navlink navbar-brand'
-                  to='/about'
-                  activeStyle={{ color: '#9BD1FA' }}
-                >
-                  About
-                </NavLink>
-              </div>
-            </div>
-          </nav>
-        </header>
-        <Route exact path='/' component={home} />
-        <Route path='/about' component={about} />
-      </div>
-    </Router>
+    <div style={{ color: 'white', fontSize: '24px' }}>
+      <Navbar collapseOnSelect expand='lg' bg='dark' variant='dark' fixed='top'>
+        <Navbar.Brand>Christina Li</Navbar.Brand>
+        <Navbar.Collapse className='justify-content-end'>
+          <Nav defaultActiveKey='#home'>
+            <Nav.Link href='#home' to='/'>
+              Home
+            </Nav.Link>
+            <Nav.Link href='#about'>About</Nav.Link>
+            <Nav.Link href='#experience'>Experience</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </div>
   );
 };
 
-export default Nav;
+export default Navigation;

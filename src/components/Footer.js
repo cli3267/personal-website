@@ -1,40 +1,49 @@
 import React from 'react';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 import { FaLinkedinIn, FaFacebookF, FaGithub } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className='py-4'>
-      <div className='d-flex flex-row justify-content-end'>
-        <div className='p-2'>
-          <FaLinkedinIn
-            size={30}
-            onClick={() =>
-              window.location.assign(
+    <div style={{ color: 'white' }}>
+      <Navbar
+        className='justify-content-end'
+        expand='lg'
+        variant='dark'
+        fixed='bottom'
+        style={{ marginBottom: '25px' }}
+      >
+        <Nav justify className='flex-column'>
+          <div
+            className='mt-5'
+            onClick={() => {
+              window.open(
                 'https://www.linkedin.com/in/christina-li-906378172/',
-              )
-            }
-          />
-        </div>
-        <div className='p-2'>
-          <FaGithub
-            size={30}
-            color='white'
-            onClick={() => window.location.assign('https://github.com/cli3267')}
-          />
-        </div>
-        <div className='p-2'>
-          <FaFacebookF
-            size={30}
-            color='white'
-            onClick={() =>
-              window.location.assign(
-                'https://www.facebook.com/christina.li.1293',
-              )
-            }
-          />
-        </div>
-      </div>
-    </footer>
+              );
+            }}
+          >
+            <FaLinkedinIn size={24} />
+          </div>
+          <div
+            className='mt-5'
+            onClick={() => {
+              window.open('https://github.com/cli3267');
+            }}
+          >
+            <FaGithub size={24} />
+          </div>
+          <div
+            className='mt-5'
+            onClick={() => {
+              window.open('https://www.facebook.com/christina.li.1293');
+            }}
+          >
+            <FaFacebookF size={24} />
+          </div>
+        </Nav>
+      </Navbar>
+    </div>
   );
 };
 
