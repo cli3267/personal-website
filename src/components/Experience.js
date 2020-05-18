@@ -18,10 +18,10 @@ const Experience = () => {
       }}
     >
       <div className='align-items-center'>
+        <h1 className='text-center' style={{ color: 'white' }}>
+          Experience
+        </h1>
         <Tab.Container defaultActiveKey='current'>
-          <h1 className='text-center' style={{ color: 'white' }}>
-            Experience
-          </h1>
           <br />
           <Row className='justify-content-center'>
             <Col sm={3}>

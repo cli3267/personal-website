@@ -8,6 +8,7 @@ const Footer = () => {
   return (
     <div style={{ color: 'white' }}>
       <Navbar
+        style={{ width: '5%' }}
         className='justify-content-end'
         expand='lg'
         bg='dark'
