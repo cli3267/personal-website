@@ -8,16 +8,16 @@ const Footer = () => {
   return (
     <div style={{ color: 'white' }}>
       <Navbar
-        style={{ width: '5%' }}
         className='justify-content-end'
         expand='lg'
         bg='dark'
         variant='dark'
         fixed='bottom'
+        style={{ width: '7vh' }}
       >
         <Nav justify className='flex-column'>
           <div
-            className='mt-3'
+            className='mt-5'
             onClick={() => {
               window.open(
                 'https://www.linkedin.com/in/christina-li-906378172/',
@@ -27,7 +27,7 @@ const Footer = () => {
             <FaLinkedinIn size={24} />
           </div>
           <div
-            className='mt-3'
+            className='mt-5'
             onClick={() => {
               window.open('https://github.com/cli3267');
             }}
@@ -35,7 +35,7 @@ const Footer = () => {
             <FaGithub size={24} />
           </div>
           <div
-            className='mt-3'
+            className='mt-5'
             onClick={() => {
               window.open('https://www.facebook.com/christina.li.1293');
             }}

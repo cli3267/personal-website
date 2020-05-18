@@ -6,8 +6,4 @@ Frontend - React & React-Bootstrap
 
 Backend - &will do either express or nextjs
 
-*Need to fix styling for full size page
-*Need to fix location of Footer
-*Need to add experience, maybe use a horizontal/vertical timeline
-*Fix image sizing
-*Use React-Bootstrap
+*need to fix home to become react-bootstrap
