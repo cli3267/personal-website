@@ -11,6 +11,7 @@ const workExperiences = [
   {
     company: 'Furey',
     location: 'Hoboken, NJ',
+    date: '3/2020 - Current',
     jobTitle: 'Software Engineering Intern',
     languages: [
       'React',
@@ -26,8 +27,22 @@ const workExperiences = [
     ],
   },
   {
+    company: 'Stevens CS Department',
+    location: 'Hoboken, NJ',
+    jobTitle: 'Course Assistant',
+    date: '1/2019 - Current',
+    classes:
+      'CS 135 (Discrete Structures), CS590 (Algorithms), CS 546 (Web Programming I)',
+    do: [
+      'Host office hours to help students learn one-on-one or in small groups',
+      'Update labs and grading scripts',
+      'Provide feedback on students’ homework and tests to help improve their knowledge',
+    ],
+  },
+  {
     company: 'Arthena',
     location: 'Soho, NY',
+    date: '5/2019 - 12/2019',
     jobTitle: 'Software Engineering Intern',
     languages: [
       'React',
@@ -48,18 +63,6 @@ const workExperiences = [
       'Deployed web scrapers as kubernetes jobs',
     ],
   },
-  {
-    company: 'Stevens CS Department',
-    location: 'Hoboken, NJ',
-    jobTitle: 'Course Assistant',
-    classes:
-      'CS 135 (Discrete Structures), CS590 (Algorithms), CS 546 (Web Programming I)',
-    do: [
-      'Host office hours to help students learn one-on-one or in small groups',
-      'Update labs and grading scripts',
-      'Provide feedback on students’ homework and tests to help improve their knowledge',
-    ],
-  },
 ];
 
 const Experience = () => (
@@ -75,6 +78,7 @@ const Experience = () => (
       <VerticalTimeline>
         {workExperiences.map(experience => (
           <VerticalTimelineElement
+            date={experience.date}
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={experience.languages ? <FaReact /> : <FaBriefcase />}
           >
