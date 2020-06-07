@@ -7,13 +7,7 @@ const CompanyExperience = (props) => (
     <br />
     <p>{props.languages}</p>
     {props.do
-      ? (
-        <ul>
-          {' '}
-          {props.do.map((x) => (<li key={x}>{x}</li>))}
-          {' '}
-        </ul>
-      )
+      ? (<ul>{props.do.map((x) => (<li key={x}>{x}</li>))}</ul>)
       : null}
   </div>
 );
