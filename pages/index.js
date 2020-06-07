@@ -1,12 +1,10 @@
 import React from 'react';
-import App from './../src/App';
+import App from '../src/App';
 
-const Home = () => {
-  return (
-    <div>
-      <App />
-    </div>
-  );
-};
+const Home = () => (
+  <div>
+    <App />
+  </div>
+);
 
 export default Home;

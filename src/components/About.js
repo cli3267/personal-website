@@ -6,7 +6,7 @@ import Image from 'react-bootstrap/Image';
 import Row from 'react-bootstrap/Row';
 
 const About = () => {
-  let public_folder = process.env.PUBLIC_URL;
+  const public_folder = process.env.PUBLIC_URL;
   return (
     <div
       style={{
@@ -16,18 +16,18 @@ const About = () => {
         justifyContent: 'center',
       }}
     >
-      <div className='align-items-center'>
-        <h1 className='text-center' style={{ color: 'white' }}>
+      <div className="align-items-center">
+        <h1 className="text-center" style={{ color: 'white' }}>
           About
         </h1>
         <br />
         <Container>
-          <Row className='justify-content-center'>
+          <Row className="justify-content-center">
             <Col sm={4}>
               <Image
-                className='float-right'
-                src={'/images/me.jpg'}
-                alt='Christina Li'
+                className="float-right"
+                src="/images/me.jpg"
+                alt="Christina Li"
               />
             </Col>
             <Col sm={7} style={{ fontSize: '18px' }}>

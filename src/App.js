@@ -25,12 +25,12 @@ const App = () => {
             alignItems: 'center',
             justifyContent: 'center',
           }}
-          className='d-flex align-items-center'
+          className="d-flex align-items-center"
         >
-          <div className='justify-content-center'>
+          <div className="justify-content-center">
             <Spinner
-              animation='border'
-              variant='light'
+              animation="border"
+              variant="light"
               style={{ height: '75px', width: '75px' }}
             />
           </div>
@@ -39,13 +39,13 @@ const App = () => {
         <div>
           <Navigation />
           <main>
-            <section id='home'>
+            <section id="home">
               <Home />
             </section>
-            <section id='about'>
+            <section id="about">
               <About />
             </section>
-            <section id='experience'>
+            <section id="experience">
               <Experience />
             </section>
           </main>
