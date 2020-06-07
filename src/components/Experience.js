@@ -52,13 +52,13 @@ const Experience = () => {
                   <CompanyExperience
                     role='Software Engineering Intern'
                     time='5/2019-12/2019'
-                    languages='React, Python, Postgres / SQL, Apollo, GraphQL, Asana, Git, Github, Kubernetes, Google Cloud'
+                    languages='React, Python, Postgres / SQL, GraphQL, Apollo, Asana, Github, Kubernetes, Google Cloud'
                     do={[
-                      'Devleloped UI comonents in React with a Apollo/GraphQL backend',
-                      'Automate React integration tests with NodeJS, Puppeteer and Jest on CircleCi',
-                      'Developed Web Scrapers using Axios, JSDom, and Sequelize',
-                      'Colloborated with the operations team to triage data quality issues',
-                      'Ran backfills on K8s cluster',
+                      'Developed UI components in React with a Apollo/GraphQL backend',
+                      'Automated React integration tests with NodeJS, Puppeteer and Jest on CircleCi',
+                      'Developed web Scrapers using Axios, JSDom, Puppeteer, and Sequelize',
+                      'Collaborated with the operations team to triage data quality issues',
+                      'Deployed web scrapers as kubernetes jobs',
                     ]}
                   />
                 </Tab.Pane>
