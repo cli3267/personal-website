@@ -6,6 +6,7 @@ Frontend - React & React-Bootstrap
 Backend - NextJS
 
 *need to fix home to become react-bootstrap
+*need to create a layout file to reduce reduancy 
 
 ## Set up
 

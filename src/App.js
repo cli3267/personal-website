@@ -5,7 +5,6 @@ import Spinner from 'react-bootstrap/Spinner';
 import Navigation from './components/Nav';
 import About from './components/About';
 import Home from './components/Home';
-import Experience from './components/Experience';
 import Footer from './components/Footer';
 
 const App = () => {
@@ -25,12 +24,12 @@ const App = () => {
             alignItems: 'center',
             justifyContent: 'center',
           }}
-          className="d-flex align-items-center"
+          className='d-flex align-items-center'
         >
-          <div className="justify-content-center">
+          <div className='justify-content-center'>
             <Spinner
-              animation="border"
-              variant="light"
+              animation='border'
+              variant='light'
               style={{ height: '75px', width: '75px' }}
             />
           </div>
@@ -38,17 +37,7 @@ const App = () => {
       ) : (
         <div>
           <Navigation />
-          <main>
-            <section id="home">
-              <Home />
-            </section>
-            <section id="about">
-              <About />
-            </section>
-            <section id="experience">
-              <Experience />
-            </section>
-          </main>
+          <Home />
           <Footer />
         </div>
       )}
