@@ -2,21 +2,19 @@ import React, { useState, useEffect } from 'react';
 
 import Spinner from 'react-bootstrap/Spinner';
 
-import Navigation from './components/Nav';
 import About from './components/About';
 import Home from './components/Home';
-import Footer from './components/Footer';
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  // const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 3000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => setLoading(false), 3000);
+  // }, []);
 
   return (
     <div>
-      {loading ? (
+      {/* {loading ? (
         <div
           style={{
             height: '100vh',
@@ -34,13 +32,11 @@ const App = () => {
             />
           </div>
         </div>
-      ) : (
+      ) : ( */}
         <div>
-          <Navigation />
-          <Home />
-          <Footer />
+          <Home />        
         </div>
-      )}
+      {/* )} */}
     </div>
   );
 };

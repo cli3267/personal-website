@@ -3,7 +3,6 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
 import { FaBriefcase, FaReact } from 'react-icons/fa';
 import Button from 'react-bootstrap/Button';
 
@@ -76,16 +75,18 @@ const Experience = () => (
         Experience
       </h1>
       <VerticalTimeline>
-        {workExperiences.map(experience => (
+        {workExperiences.map((experience, i) => (
           <VerticalTimelineElement
+            key={i}
             date={experience.date}
             iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
             icon={experience.languages ? <FaReact /> : <FaBriefcase />}
           >
             <div style={{ color: 'black' }}>
               {experience.languages
-                ? experience.languages.map(lang => (
+                ? experience.languages.map((lang, i) => (
                     <Button
+                      key={i}
                       style={{ margin: 5 }}
                       variant='outline-dark'
                       disabled
@@ -94,7 +95,9 @@ const Experience = () => (
                     </Button>
                   ))
                 : null}
-              <h3 style={{ marginTop: 5 }}>{experience.jobTitle}</h3>
+              <h3 style={{ marginTop: 5, fontWeight: 'bold' }}>
+                {experience.jobTitle}
+              </h3>
               <h4>{experience.company + ' - ' + experience.location}</h4>
               <p>{experience.classes}</p>
               {experience.do ? (
