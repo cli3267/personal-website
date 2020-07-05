@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 import NavigationLabel from './NavigationLabel';
 
@@ -11,6 +12,14 @@ const navButtons = [
 ];
 
 const Navigation = () => {
+  const router = useRouter();
+
+  const [currentPage, setCurrentPage] = useState('');
+
+  useEffect(() => {
+    setCurrentPage(router.pathname);
+  }, [router]);
+
   return (
     <div style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
       <div
@@ -33,7 +42,7 @@ const Navigation = () => {
         }}
       >
         {navButtons.map((nav, i) => (
-          <NavigationLabel key={i} nav={nav} />
+          <NavigationLabel key={i} nav={nav} currentPage={currentPage} />
         ))}
       </div>
     </div>

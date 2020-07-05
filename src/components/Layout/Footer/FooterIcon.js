@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 
 const FooterIcon = props => {
-  const { redirectLink, Icon, key } = props;
+  const { redirectLink, Icon } = props;
   const [hovered, setHovered] = useState(false);
 
   return (
     <div
-      key={key}
       className='mt-5'
       onClick={() => window.open(redirectLink)}
       onMouseEnter={() => setHovered(true)}

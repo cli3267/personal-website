@@ -3,7 +3,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import '../public/styles.css';
 
 import Footer from '../src/components/Layout/Footer/Footer';
-import Navigiation from '../src/components/Layout/Navigation';
+import Navigiation from '../src/components/Layout/Navigation/Navigation';
 
 const MyApp = ({ Component, pageProps }) => {
   return (

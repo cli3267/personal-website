@@ -28,18 +28,22 @@ const Footer = () => {
   return (
     <div>
       <Navbar
-        className='justify-content-end'
         expand='lg'
         variant='dark'
         fixed='bottom'
-        style={{ marginBottom: '25px' }}
+        style={{
+          marginBottom: '25px',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'flex-end',
+        }}
       >
         <Nav justify className='flex-column'>
           {externalLinks.map((link, i) => {
             const Icon = link.Icon;
             const redirectLink = link.site;
             return (
-              <FooterIcon redirectLink={redirectLink} Icon={Icon} key={i} />
+              <FooterIcon key={i} redirectLink={redirectLink} Icon={Icon} />
             );
           })}
         </Nav>

@@ -2,21 +2,23 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 const NavigationLabel = props => {
-  const { nav } = props;
+  const { nav, currentPage } = props;
   const [hovered, setHovered] = useState(false);
   return (
     <div
       style={{
-        fontSize: '24px',
+        fontSize: 24,
         padding: 5,
-        marginRight: 10,
+        marginRight: 15,
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
       {nav.link ? (
         <Link href={nav.link}>
-          <a style={{ color: hovered ? '#9BD1FA' : 'white' }}>{nav.name}</a>
+          <a style={{ color: currentPage === nav.link ? '#9BD1FA' : 'white' }}>
+            {nav.name}
+          </a>
         </Link>
       ) : (
         <a
