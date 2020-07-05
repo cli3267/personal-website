@@ -5,18 +5,19 @@ const items = ['a Student', 'an Athlete', 'an aspiring Software Engineer'];
 
 const Home = () => (
   <div
-    className='d-flex align-items-center text-white bg-dark'
-    style={{ height: '80vh' }}
+    style={{
+      color: 'white',
+      height: '80vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
   >
-    <div className='container'>
-      <div className='row justify-content-center'>
-        <h1 className='font-weight-bold'>Hi! My name is Christina Li,</h1>
-      </div>
-      <div className='row justify-content-center'>
-        <h4 className='text-muted'>
-          I am <ReactRotatingText items={items} />
-        </h4>
-      </div>
+    <div className='justify-content-center' style={{ textAlign: 'center' }}>
+      <h1 style={{ fontWeight: 'bold' }}>Hi! My name is Christina Li,</h1>
+      <h4 className='text-muted'>
+        I am <ReactRotatingText items={items} />
+      </h4>
     </div>
   </div>
 );

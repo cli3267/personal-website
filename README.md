@@ -6,11 +6,6 @@ Frontend - React & React-Bootstrap
 Backend - NextJS
 
 *need to fix home to become react-bootstrap
-*need to create a layout file to reduce reduancy 
-*make current nav active
-*create a contacts page
-*show resume (maybe using a button)
-*specify a node version
 
 ## Set up
 
