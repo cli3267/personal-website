@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 
+import Navbar from 'react-bootstrap/Navbar';
+
 import NavigationLabel from './NavigationLabel';
 
 const navButtons = [
   { name: 'Home', link: '/' },
   { name: 'About', link: '/about' },
   { name: 'Experience', link: '/experience' },
-  { name: 'Contant', link: '/contact' },
+  { name: 'Contact', link: '/contact' },
   { name: 'Resume' },
 ];
 
@@ -21,13 +23,13 @@ const Navigation = () => {
   }, [router]);
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
+    <Navbar expand='lg' style={{ display: 'flex', alignItems: 'center' }}>
       <div
         style={{
           display: 'flex',
-          padding: 10,
           justifyContent: 'flex-start',
-          width: '15%',
+          padding: 10,
+          width: '20%',
           marginTop: 5,
         }}
       >
@@ -45,7 +47,7 @@ const Navigation = () => {
           <NavigationLabel key={i} nav={nav} currentPage={currentPage} />
         ))}
       </div>
-    </div>
+    </Navbar>
   );
 };
 

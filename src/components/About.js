@@ -11,7 +11,7 @@ const About = () => {
       }}
     >
       <div>
-        <h1 style={{ color: 'white', textAlign: 'center' }}>About</h1>
+        <h1 style={{ textAlign: 'center' }}>About</h1>
         <br />
         <div
           style={{
@@ -21,7 +21,14 @@ const About = () => {
           }}
         >
           <img src='images/me.jpg' alt='Christina Li' />
-          <div style={{ marginLeft: 50, fontSize: 18, width: '50%' }}>
+          <div
+            style={{
+              marginLeft: 50,
+              fontSize: 18,
+              width: '50%',
+              color: '#9BD1FA',
+            }}
+          >
             <p>
               Christina is a 4/4.5 Computer Science major who will be completing
               her Bachelors degree in Spring of 2021 and her Master's degree in

@@ -2,7 +2,12 @@ import React, { useState } from 'react';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
-import { FaLinkedinIn, FaFacebookF, FaGithub } from 'react-icons/fa';
+import {
+  FaLinkedinIn,
+  FaFacebookF,
+  FaGithub,
+  FaInstagram,
+} from 'react-icons/fa';
 
 import FooterIcon from './FooterIcon';
 
@@ -22,6 +27,11 @@ const externalLinks = [
     site: 'https://www.facebook.com/christina.li.1293',
     Icon: FaFacebookF,
   },
+  {
+    name: 'Instagram',
+    site: 'https://www.instagram.com/_chrischyna/',
+    Icon: FaInstagram,
+  },
 ];
 
 const Footer = () => {
@@ -32,7 +42,7 @@ const Footer = () => {
         variant='dark'
         fixed='bottom'
         style={{
-          marginBottom: '25px',
+          marginBottom: 20,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'flex-end',

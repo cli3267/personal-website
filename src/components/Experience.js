@@ -71,9 +71,7 @@ const Experience = () => (
     }}
   >
     <div>
-      <h1 className='text-center' style={{ color: 'white' }}>
-        Experience
-      </h1>
+      <h1 style={{ textAlign: 'center' }}>Experience</h1>
       <VerticalTimeline>
         {workExperiences.map((experience, i) => (
           <VerticalTimelineElement

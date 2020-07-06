@@ -12,10 +12,8 @@ const Contact = () => {
       }}
     >
       <div style={{ textAlign: 'center', width: '50%' }}>
-        <h1 style={{ color: 'white' }}>
-          Want to Collaborate on an Idea or want to Chat ?
-        </h1>
-        <p>
+        <h1>Want to Collaborate on an Idea or want to Chat ?</h1>
+        <p style={{ color: '#9BD1FA' }}>
           I am always looking for new opportunities and projects to grow as a
           software engineer!
         </p>
