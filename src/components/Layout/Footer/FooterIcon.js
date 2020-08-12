@@ -6,10 +6,10 @@ const FooterIcon = props => {
 
   return (
     <div
-      className='mt-5'
       onClick={() => window.open(redirectLink)}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      style={{ marginTop: 15, padding: 10 }}
     >
       <Icon size={24} style={{ color: hovered ? '#9BD1FA' : 'white' }} />
     </div>

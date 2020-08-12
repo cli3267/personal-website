@@ -13,7 +13,7 @@ const Contact = () => {
     >
       <div style={{ textAlign: 'center', width: '50%' }}>
         <h1>Want to Collaborate on an Idea or want to Chat ?</h1>
-        <p style={{ color: '#9BD1FA' }}>
+        <p style={{ color: '#9BD1FA', fontSize: 18 }}>
           I am always looking for new opportunities and projects to grow as a
           software engineer!
         </p>
@@ -23,7 +23,7 @@ const Contact = () => {
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           style={{
-            fontSize: 28,
+            fontSize: 26,
             border: '1px solid',
             padding: '10px',
             color: hovered ? 'black' : 'white',

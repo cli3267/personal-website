@@ -30,23 +30,22 @@ const About = () => {
             }}
           >
             <p>
-              Christina is a 4/4.5 Computer Science major who will be completing
-              her Bachelors degree in Spring of 2021 and her Master's degree in
-              Computer Science in the Fall of 2021. She is originally from
-              Southern California and she loves to play basketball, checking out
-              new food spots, and coding ! She has played basketball for the
-              past 9 years and is currently the point guard on the Stevens
-              Women's Basketball team. Through basketball, she has learned the
-              importance of leadership, teamwork, time-management and
-              communication.
-            </p>
-            <br />
-            <p>
-              Outside of basketball, Christina balances her time between
-              studying, working as a CA, and as a part time software engineering
-              intern at Furey. She is currently a Course Assistant for CS 546
-              (Web Programming I). She has also been a Course Assistant for CS
-              135 (Discrete Structures) and CS 590 (Algorithms).
+              I am currently a 4/4.5 Computer Science Major at Stevens
+              Institute of Technology. I will be completing my Bachelor's of
+              Computer Science in the Spring of 2021 and my Master's in Computer
+              Science in the Fall of 2021. At Stevens, I am currently a member
+              of Sigma Delta Tau and the Women's Basketball team. I grew up in
+              Southern California, go Lakers! In my spare time, I love to play
+              basketball, check out new food spots, and learn new coding
+              languages. My professional experience includes working as a Course
+              Assistant and interning at 2 technology startups. I am currently a
+              Course Assistant for CS 546 (Web Programming I) and have
+              previously been a Course Assistant for CS 135 (Discrete
+              Structures) and CS 590 (Algorithms). I currently work part-time at
+              Feury (an accounting startup) and have worked at Arthena (an art
+              investment startup) in the past. Feel free to reach out
+              (cli3267@gmail.com) if you want to collaborate, I'd love to
+              connect!
             </p>
           </div>
         </div>
