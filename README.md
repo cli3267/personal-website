@@ -5,10 +5,9 @@ Frontend - React & React-Bootstrap
 
 Backend - NextJS
 
-*need to fix home to become react-bootstrap
-
 ## Set up
 
 1. Run `nvm use` to specify the correct node version. See [here](https://github.com/nvm-sh/nvm) for more about nvm. 
 2. Run `npm install`
-3. Run `npm run dev`
+3. Run `npm run build`
+4. Run `npm run dev`

@@ -1,59 +1,54 @@
 import React from 'react';
 
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Image from 'react-bootstrap/Image';
-import Row from 'react-bootstrap/Row';
-
 const About = () => {
-  const public_folder = process.env.PUBLIC_URL;
   return (
     <div
       style={{
-        height: '100vh',
+        height: '80vh',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
       }}
     >
-      <div className="align-items-center">
-        <h1 className="text-center" style={{ color: 'white' }}>
-          About
-        </h1>
+      <div>
+        <h1 style={{ textAlign: 'center' }}>About</h1>
         <br />
-        <Container>
-          <Row className="justify-content-center">
-            <Col sm={4}>
-              <Image
-                className="float-right"
-                src="/images/me.jpg"
-                alt="Christina Li"
-              />
-            </Col>
-            <Col sm={7} style={{ fontSize: '18px' }}>
-              <p>
-                Christina is a 4/4.5 Computer Science major who will be
-                completing her Bachelors degree in Spring of 2021 and her
-                Master's degree in Computer Science in the Fall of 2021. She is
-                originally from Southern California and she loves to play
-                basketball, checking out new food spots, and coding ! She has
-                played basketball for the past 9 years and is currently the
-                point guard on the Stevens Women's Basketball team. Through
-                basketball, she has learned the importance of leadership,
-                teamwork, time-management and communication.
-              </p>
-              <br />
-              <p>
-                Outside of basketball, Christina balances her time between
-                studying, working as a CA, and as a part time software
-                engineering intern at Furey. She is currently a Course Assistant
-                for CS 546 (Web Programming I). She has also been a Course
-                Assistant for CS 135 (Discrete Structures) and CS 590
-                (Algorithms).
-              </p>
-            </Col>
-          </Row>
-        </Container>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <img src='images/me.jpg' alt='Christina Li' />
+          <div
+            style={{
+              marginLeft: 50,
+              fontSize: 18,
+              width: '50%',
+              color: '#9BD1FA',
+            }}
+          >
+            <p>
+              I am currently a 4/4.5 Computer Science Major at Stevens
+              Institute of Technology. I will be completing my Bachelor's of
+              Computer Science in the Spring of 2021 and my Master's in Computer
+              Science in the Fall of 2021. At Stevens, I am currently a member
+              of Sigma Delta Tau and the Women's Basketball team. I grew up in
+              Southern California, go Lakers! In my spare time, I love to play
+              basketball, check out new food spots, and learn new coding
+              languages. My professional experience includes working as a Course
+              Assistant and interning at 2 technology startups. I am currently a
+              Course Assistant for CS 546 (Web Programming I) and have
+              previously been a Course Assistant for CS 135 (Discrete
+              Structures) and CS 590 (Algorithms). I currently work part-time at
+              Feury (an accounting startup) and have worked at Arthena (an art
+              investment startup) in the past. Feel free to reach out
+              (cli3267@gmail.com) if you want to collaborate, I'd love to
+              connect!
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
